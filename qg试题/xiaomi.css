@@ -1,0 +1,281 @@
+body,
+div,
+dl,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    min-width: 1226px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img,
+input,
+button {
+    border: none;
+    vertical-align: middle;
+}
+
+/* 头部样式开始 */
+.header {
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    line-height: 40px;
+}
+
+.header a {
+    color: #b0b0b0;
+    font-size: 12px;
+}
+
+.header span {
+    color: #424242;
+    margin: 0 3.6px;
+    font-size: 12px;
+}
+
+.wrap {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+.header-left {
+    float: left;
+}
+
+.header-right {
+    float: right;
+}
+
+.header li {
+    float: left;
+    height: 40px;
+}
+
+
+.header a:hover {
+    color: #fff;
+}
+
+.shopping {
+    width: 120px;
+    height: 40px;
+    background-color: #424242;
+    margin-left: 25px;
+}
+
+.shopping a:hover {
+    color: #ff6700;
+}
+
+/* 头部样式结束 */
+/* 导航样式开始 */
+.nav {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+}
+
+.logo {
+    float: left;
+    width: 234px;
+    height: 100px;
+    text-align: left;
+}
+
+.nav-bar {
+    float: left;
+    width: 696px;
+    height: 100px;
+}
+
+.search {
+    float: left;
+    width: 296px;
+    height: 50px;
+    margin-top: 25px;
+}
+
+.logo img {
+    width: 56px;
+    margin-top: 22px;
+}
+
+.nav-bar ul li {
+    float: left;
+}
+
+.nav-bar ul li a {
+    display: block;
+    padding: 38px 10px;
+    color: #333;
+    font-size: 16px;
+}
+
+.nav-bar ul li a:hover {
+    color: #ff6700;
+}
+
+.search input {
+    float: left;
+    width: 223px;
+    height: 48px;
+    padding: 0 10px;
+    border: 1px solid #e0e0e0;
+    border-right: none;
+    outline: none;
+}
+
+.search button {
+    float: left;
+    width: 52px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    transition: all .2s;
+}
+
+.search button:hover {
+    background-color: #ff6700;
+    border-color: #ff6700;
+    color: #fff;
+}
+
+/* 导航样式结束 */
+/* banner样式开始 */
+.banner {
+    width: 100%;
+    height: 460px;
+}
+
+.banner-box {
+    position: relative;
+    width: 100%;
+    height: 460px;
+
+}
+
+.banner-box img {
+    width: 1226px;
+    height: 460px;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 234px;
+    height: 420px;
+    padding: 20px 0;
+    background-color: rgba(105, 101, 101, .6);
+}
+
+.slide ul li {
+    height: 42px;
+    line-height: 42px;
+    padding-left: 30px;
+    text-align: left;
+
+}
+
+.slide ul li a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.slide ul li:hover {
+    background-color: #ff6700;
+}
+
+
+
+/* banner样式结束 */
+/* 广告样式开始 */
+.adv {
+    width: 100%;
+    height: 170px;
+    margin: 14px 0 26px;
+}
+
+.adv-aside {
+    float: left;
+    width: 228px;
+    height: 164px;
+    padding: 3px;
+    background-color: #5f5750;
+}
+
+.adv-img {
+    float: left;
+    width: 316px;
+    height: 170px;
+    background-color: red;
+    margin-left: 14.66px;
+    transition: all .2s linear;
+}
+
+.adv-img:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+}
+
+.adv-img img {
+    width: 316px;
+    height: 170px;
+}
+
+.adv-aside li {
+    float: left;
+    width: 76px;
+    height: 82px;
+}
+
+.adv-aside li img {
+    margin: 10px auto;
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.adv-aside li span {
+    color: #e0e0e0;
+    font-size: 14px;
+}
+
+.adv-aside li span:hover {
+    color: #fff;
+}
+
+/* 广告样式结束 */
