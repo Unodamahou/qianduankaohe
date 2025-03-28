@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #e6f2fa;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo-text {
+    font-size: 2.5rem;
+    color: #f5d742;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 5px;
+}
+
+.language-switcher {
+    position: absolute;
+    right: 20px;
+    display: flex;
+    gap: 5px;
+}
+
+.language-switcher a {
+    text-decoration: none;
+    color: #333;
+}
+
+.language-switcher a.active {
+    font-weight: bold;
+}
+
+.input-container {
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#note-title,
+#note-content,
+#edit-title,
+#edit-content {
+    padding: 15px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+#note-title,
+#edit-title {
+    border-bottom: 1px solid #f0f0f0;
+    font-weight: bold;
+}
+
+#note-content,
+#edit-content {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.submit-btn {
+    padding: 15px 25px;
+    background-color: #ffd1dc;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    display: flex;
+    gap: 20px;
+}
+
+.todo-container {
+    flex-grow: 1;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tab-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #8ed1c3;
+    color: white;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.daily-tip {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.daily-tip::after {
+    content: "•";
+    color: #ffa07a;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.todo-list {
+    padding: 10px;
+    min-height: 300px;
+}
+
+.todo-item {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f6e9;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.todo-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.todo-checkbox {
+    margin-right: 10px;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+.todo-checkbox:checked::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #8ed1c3;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.todo-title {
+    flex-grow: 1;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.todo-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.todo-edit,
+.todo-delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-content {
+    margin-left: 30px;
+    white-space: pre-wrap;
+}
+
+.completed .todo-title,
+.completed .todo-content {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.sidebar {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.star-btn {
+    padding: 10px;
+    background-color: #8ed1c3;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-links {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-links a {
+    padding: 15px 10px;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.sidebar-links a:last-child {
+    border-bottom: none;
+}
+
+.sidebar-links a.active {
+    background-color: #f9f6e9;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #999;
+}
+
+.edit-fields {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+#save-edit {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.empty-message {
+    text-align: center;
+    color: #999;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column-reverse;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+}

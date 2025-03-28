@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>笔记应用</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1 class="logo-text">TODO</h1>
+            </div>
+            <div class="language-switcher">
+                <a href="#" class="about">关于我</a>
+                <a href="#" id="lang-en">En</a> /
+                <a href="#" id="lang-zh" class="active">中</a>
+            </div>
+        </header>
+
+        <div class="input-container">
+            <div class="input-fields">
+                <input type="text" id="note-title" placeholder="笔记标题...">
+                <textarea id="note-content" placeholder="笔记内容..."></textarea>
+            </div>
+            <button id="note-submit" class="submit-btn">提交</button>
+        </div>
+
+        <div class="main-container">
+            <div class="todo-container">
+                <div class="tab-header">
+                    <button class="tab-btn active" id="btn-all">全部标为完成</button>
+                    <div class="daily-tip">今日事今日毕，勿将今事待明日！</div>
+                </div>
+
+                <div class="todo-list" id="todo-list">
+                    <!-- Todo items will be added here dynamically -->
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <button class="star-btn">开 ★</button>
+                <div class="sidebar-links">
+                    <a href="#" id="filter-all" class="active">全部</a>
+                    <a href="#" id="filter-recyclebin">回收站</a>
+                    <a href="#" id="filter-completed">全部标为已完成</a>
+                    <a href="#" id="clear-all">清除全部</a>
+                    <a href="#" id="export-data">导出数据</a>
+                    <a href="#" id="import-data">导入(txt/json)</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Edit Modal -->
+        <div id="edit-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>编辑笔记</h2>
+                <div class="edit-fields">
+                    <input type="text" id="edit-title" placeholder="笔记标题...">
+                    <textarea id="edit-content" placeholder="笔记内容..."></textarea>
+                </div>
+                <button id="save-edit" class="submit-btn">保存</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
