@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- 模型库部分 -->
+        <div class="model-library">
+            <h2>模型库</h2>
+            <div class="model-list" id="modelList">
+                <!-- 模型在这里动态添加 -->
+            </div>
+            <div class="add-model-form">
+                <h3>添加新模型</h3>
+                <form action="" id="addModelForm">
+                    <input type="text" id="modelName" placeholder="模型名称" required>
+                    <input type="url" id="modelUrl" placeholder="模型URL" required>
+                    <textarea name="" id="modelDescription" placeholder="模型描述" required></textarea>
+                    <button type="submit">添加模型</button>
+                </form>
+            </div>
+        </div>
+        <!-- 工作区部分 -->
+        <div class="workspace">
+            <div class="workspace-container" id="workspaceContainer">
+                <!-- 工作区层级在这里添加 -->
+            </div>
+            <button id="addLayerBtn">添加新层级</button>
+        </div>
+        <!-- 查询表单部分 -->
+        <div class="query-form">
+            <h2>提交查询</h2>
+            <form action="" id="queryForm">
+                <textarea name="" id="queryContent" placeholder="在此输入您的问题..." required></textarea>
+                <div class="file-uplpad">
+                    <label for="imageUpload">上传图片</label>
+                    <input type="file" id="imageUpload" accept="image/*">
+                </div>
+                <button type="submit">提交查询</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
